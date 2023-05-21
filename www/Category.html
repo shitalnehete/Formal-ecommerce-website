@@ -1,0 +1,166 @@
+<html>
+    <head>
+        <title>CATEGORY</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {box-sizing: border-box;}
+            body{
+                margin: 0;
+                font-family: Arial;
+                background-image: url("Background.jpg");
+                background-size: cover;
+                color: dimgray;
+            }
+            .heading ul{
+                list-style-type: none;
+                margin-top:100px;
+                padding:0;
+                background-color: #333;
+                position: fixed;
+                top:0;
+                width:100%;
+            }
+            .heading li{
+                float:right;
+            }
+            .heading li a{
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            .heading li a:hover:not(.active){
+                background-color: #111;
+            }
+            .heading .active{
+                background-color: #235597;
+            }
+            
+            img.logo{   position:fixed;
+			padding:0;
+			margin-top:0;
+                top:0;
+		    }
+	  
+		h3.slogan{font-family:garamond;
+		   font-size:150%;
+            margin-left: 30%;
+		   color:navy;
+            top:0;
+		   position: fixed;
+		   }
+            div.floating-box{
+                float: left;
+                width: 30%;
+                height: 75%;
+                margin-bottom: 8%;
+            }
+            div.floating-box1 {
+                float: left;
+                width: 20%;
+                height: 40%;
+                margin: 5%;
+                margin-bottom: 4%;
+            }
+            div.floating-box2 {
+                float: left;
+                width: 60%;
+                height: 75%;
+                border-radius: 3px;
+                margin-bottom: 8%;
+                border: 2px solid dimgray;
+            }
+            div.alldiv{
+                margin-top: 190px;
+                margin-left: 5%;
+            }
+            .Category img{
+                width: 100%;
+                height: 70%;
+            }
+            .Category img:hover{
+                transform: scale(0.8);
+            }
+            .Category .Cname{
+                width: 0.1%;
+                height: 30px;
+                font-size: 15px;
+                font-weight: bold;
+                border-radius: 5px;
+                border: 1px solid dimgray;
+                background-color: dimgray;
+                color: white;
+                padding-left: 10px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                transition: width 0.5s;
+            }
+            .Category .Cname:hover{
+                background-color: white;
+                color: dimgray;
+                width: 100%;
+            }
+            .Category a{
+                text-decoration: none;
+                color: dimgray;
+            }
+            @media screen and (max-width:800px)  {
+		      .relative{
+			     width: 100%;
+		      }
+                div.floating-box2{
+                    float:none;
+                    width: 100%;
+                    margin: 0;
+                    right: 0;
+                }
+                div.floating-box{
+                    float: none;
+                    width: 100%;
+                    margin-left: 0;
+                }
+                div.alldiv{
+                    margin-left:0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="relative">
+            <a href="index.html"><img class="logo" src="logo1.png" height="105" alt="logo"></a>
+            <h3 class="slogan">JSM FORMALS THE WAY OF CLOTHING!</h3>
+            <div class="heading">
+                <ul>
+                    <li style="float:left"> <a href="Login.html">LOGIN</a></li>
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a class="active" href="Category.html">Category</a></li>
+                    <li> <a href="ContactUs.html">Contact Us</a></li>
+                    <li> <a href="About.html">About</a></li>
+                </ul>
+            </div>
+            <div class="alldiv">
+                <div class="floating-box"> <img src=CategoryWOMEN.jpg width="100%" height="100%"> </div>
+                <div class="Category floating-box2">
+                    <div class="floating-box1"><a href="Wshirts.html"><img src="WomenShirt.jpg"><div class="CName">Shirts</div></a></div>
+                    <div class="floating-box1"><a href="WBlazer.html"><img src="Womenblazer.jpg"><div class="CName">Blazers</div></a></div>
+                    <div class="floating-box1"><a href="Wtie.html"><img src="Womentie.jpg"><div class="CName">Tie/Bow</div></a></div>
+                    <div class="floating-box1"><a href="Wtrousers.html"><img src="Womentrouser.jpg"><div class="CName">Trousers</div></a></div>
+                    <div class="floating-box1"><a href="Wchinos.html"><img src="Womenchinos.jpg"><div class="CName">Chinos</div></a></div>
+                    <div class="floating-box1"><a href="Wskirts.html"><img src="Womenskirt.jpg"><div class="CName">Skirts</div></a></div>
+                </div> <br>
+            </div> <br><br><br>
+            <div class="alldiv">
+                <div class="floating-box"> <img src=CategoryMEN.jpg width="100%" height="100%"> </div>
+                <div class="Category floating-box2">
+                    <div class="floating-box1"><a href="Mshirts.html"><img src="Menshirt.jpg"><div class="CName">Shirts</div></a></div>
+                    <div class="floating-box1"><a href="MBlazer.html"><img src="Menblazer.jpg"><div class="CName">Blazers</div></a></div>
+                    <div class="floating-box1"><a href="Mtie.html"><img src="Mentie.jpg"><div class="CName">Tie/Bow</div></a></div>
+                    <div class="floating-box1"><a href="Mtrouser.html"><img src="Mentrouser.jpg"><div class="CName">Trousers</div></a></div>
+                    <div class="floating-box1"><a href="Mchinos.html"><img src="Menchinos.jpg"><div class="CName">Chinos</div></a></div>
+                </div> <br>
+            </div>
+            
+        </div>
+    </body>
+</html>.

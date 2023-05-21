@@ -1,0 +1,188 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Order Confirmation</title>
+        <style>
+            * {box-sizing: border-box;}
+            body{
+                margin:0;
+                font-family: Arial;
+                background-image: url("Background.jpg");
+                letter-spacing: 0.8px;
+                color: dimgray;
+            }
+            div.entire{
+                margin-left: 20%;
+                margin-right: 20%;
+            }
+            div.subpart1, div.subpart2, div.subpart3, div.subpart4{
+                border: 2px solid dimgray;
+                margin: 2%;
+                border-radius: 20px;
+            }
+            div.subpart1{
+                margin-top: 150px;
+            }
+            img.logo{   position:fixed;
+			padding:0;
+			margin-top:0;
+                top:0;
+		    }
+            .heading ul{
+                list-style-type: none;
+                margin-top:100px;
+                padding:0;
+                background-color: #333;
+                position: fixed;
+                top:0;
+                width:100%;
+            }
+            .heading li{
+                float:right;
+            }
+            .heading li a{
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            .heading li a:hover:not(.active){
+                background-color: #111;
+            }
+            .heading .active{
+                background-color: #235597;
+            }
+            
+		h3.slogan{font-family:garamond;
+		   font-size:150%;
+            margin-left: 30%;
+		   color:navy;
+            top:0;
+		   position: fixed;
+		   }
+            .entire input[type=text], input[type=number]{
+                border: none;
+                border-radius: 5px;
+                background-color: azure;
+                border-bottom: 1px solid dimgray;
+                height: 40px;
+                width: 40%;
+            }
+            .subpart4 .Price, .subpart4 .Shipping, .subpart4 .Total{
+                width: 70px;
+                text-align: center;
+                font-size: 20;
+            }
+            .Ordernow{
+                width: 200px;
+                height: 40px;
+                font-size: 15px;
+                border-radius: 5px;
+                border: 2px solid white;
+                color: white;
+                background-color: dimgray;
+            }
+            .Ordernow:hover{
+                border: 2px solid dimgray;
+                color: dimgray;
+                background-color: white;
+            }
+            @media screen and (max-width:500px)  {
+		      .entire{
+                  margin-left: 0;
+		      }
+                .header .dropdown-content{
+                    width: 300%;
+                }
+                .Formals-Category img.Dropdown-image{
+                visibility: hidden;
+                }
+                div.subpart1, div.subpart2, div.subpart3, div.subpart4{
+                    width:100%;
+                    margin-left:0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <a href="index.html"><img class="logo" src="logo1.png" height="105" alt="logo"></a>
+            <h3 class="slogan">JSM FORMALS THE WAY OF CLOTHING!</h3>
+        <div class="heading">
+                <ul>
+                    <li style="float:left"> <a href="Login.html">LOGIN</a></li>
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a class="active" href="Category.html">Category</a></li>
+                    <li> <a href="ContactUs.html">Contact Us</a></li>
+                    <li> <a href="About.html">About</a></li>
+                </ul>
+            </div>
+        <div class="entire">
+            
+            <form action="index.html">
+                <div class="subpart1">
+                    <center>
+                        <h3>PERSONAL DETAILS</h3>
+                        <input type="text" name="Name" placeholder="Name" required><br><br>
+                        <input type="text" name="Flatno" placeholder="Flat No./Building Name" required><br><br>
+                        <input type="text" name="Landmark" placeholder="Landmark" required><br><br>
+                        <input type="text" name="City" placeholder="City/Town" required><br><br>
+                        <input type="text" name="State" placeholder="State" required><br><br>
+                        <input type="number" name="Pincode" placeholder="Pincode" required><br><br>
+                    </center>
+                </div>
+                <div class="subpart3">
+                    <center>
+                        <h3>SIZE</h3>
+                        <input type="radio" name="Size" value="XS">XS 
+                        <input type="radio" name="Size" value="S">S 
+                        <input type="radio" name="Size" value="M">M 
+                        <input type="radio" name="Size" value="L">L
+                        <input type="radio" name="Size" value="XL">XL <br><br>
+                    </center>
+                </div>
+                <div class="subpart2">
+                    <center>
+                        <h3>PAYMENT METHODS</h3> 
+                        <table>
+                            <tr text-align="left"><input type="radio" name="Payoptions" value="Cash On Delivery">Cash on Delivery <br></tr>
+                            <tr><input type="radio" name="Payoptions" value="Credit Card/Debit Card">Credit Card/Debit Card <br></tr>
+                            <tr><input type="radio" name="Payoptions" value="Netbanking">Netbanking <br></tr>
+                            <tr><input type="radio" name="Payoptions" value="Wallet">Wallet(UPI, Google Pay) <br></tr>
+                        </table>
+                    </center>
+                </div>
+                <div class="subpart4">
+                    <center>
+                        <h4>STANDARD SHIPPING Rs. 150/-</h4> 
+                        <table>
+                            <tr>
+                                <td>Retail Price: </td>
+                                <td><input type="number" class="Price" id="Price" value="0" disabled> </td>
+                            </tr>
+                            <tr>
+                                <td>Shipping Charges: </td>
+                                <td><input type="number" class="Shipping" id=Shipping value="150" disabled> </td>
+                            </tr>
+                            <tr>
+                                <td>TOTAL: </td>
+                                <td><input type="number" class="Total" id=Total disabled> </td>
+                            </tr>
+                        </table>
+                    </center>
+                </div>
+                <div class="subpart5">
+                    <center><button class="Ordernow" onclick="alert('Your order is placed!')">ORDER NOW</button></center>
+                </div>
+            </form>
+            
+        </div>
+        <script>
+            var inputTest = localStorage['PasstoDelivery'];
+            document.getElementById("Price").value=inputTest;
+            localStorage.removeItem( 'PasstoDelivery' ); // Clear the localStorage
+            var ShippingCharges = document.getElementById("Shipping").value;
+            document.getElementById("Total").value = parseInt(inputTest) + parseInt(ShippingCharges);
+        </script>
+    </body>
+</html>

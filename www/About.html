@@ -1,0 +1,192 @@
+<html>
+    <head>
+        <title>ABOUT US</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {box-sizing: border-box;}
+            div.content{
+                margin-left: 20%;
+                margin-top: 70px;
+                margin-bottom: 50px;
+                width: 60%;
+            }
+            div.border{
+                border: none;
+                border-bottom: 1px solid black; 
+            }
+            body{
+                margin:0;
+                font-family: Arial;
+                background-image: url("Background.jpg");
+                background-size: cover;
+                color: dimgray;
+            }
+            .header ul{
+                list-style-type: none;
+                margin:0;
+                padding:0;
+                background-color: #333;
+                position: fixed;
+                width:100%;
+                top: 0;
+                margin-top:100px;
+            }
+            .header li{
+                float:right;
+            }
+            .header li a{
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            .header li a:hover{
+                background-color: #111;
+            }
+            .header .active{
+                background-color: #235597;
+            }
+            .header .active:hover{
+                background-color: #4755D5;
+            }
+            .header .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+            .header .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: white;
+                right: 0;
+                width: 1100%;
+                padding-bottom: 30px;
+            }
+            .header .dropdown-content a {
+                color: dimgray;
+                text-decoration: none;
+                height: 10px;
+                display: block;
+                text-align: left;
+                font-size: 14px;
+                margin-left:-7px;
+                padding-left: 8px;
+                padding-bottom: 2px;
+            }
+            .header .dropdown-content a:hover{
+                color: blue;
+                background-color: white;
+                text-decoration: underline;
+            }
+            .header .dropdown-content .Formals-Category{
+                float: left;
+                padding-left: 100px;
+                padding: 10px 30px 50px 30px;
+            }
+            
+            img.logo{   position:fixed;
+			padding:0;
+			margin-top:0;
+                top:0;
+		    }
+	  
+		h3{font-family:garamond;
+		   font-size:150%;
+            margin-left: 30%;
+		   color:navy;
+            top:0;
+		   position: fixed;
+		   }
+            .Formals-Category h5{
+                font-size: 16px;
+                margin-bottom: -7px;
+            }
+            .Formals-Category h4{
+                font-size: 20px;
+                margin-bottom: -5px;
+            }
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            img.initial{
+                margin-top: 180px;
+                width: 45%;
+                height: 45%;
+            }
+             @media screen and (max-width:500px)  {
+		      .relative, .content, .border, img.initial, .India {
+			     width: 100%;
+		      }
+                 .header .dropdown-content{
+                    width: 300%;
+                }
+                 .Formals-Category img.Dropdown-image{
+                visibility: hidden;
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="relative">
+            <a href="index.html"><img class="logo" src="logo1.png" height="105" alt="logo"></a>
+            <h3>JSM FORMALS THE WAY OF CLOTHING!</h3>
+            <div class="header">
+                <ul>
+                    <li style="float:left"> <a href="Login.html">LOGIN</a></li>
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <div class="dropdown">
+                            <a href="Category.html">Category</a>
+                            <div class="dropdown-content">
+                                <div class="Formals-Category">
+                                    <h4>Women's Formals</h4>
+                                    <h5>TopWear</h5>
+                                    <a href="Wshirts.html">Shirts</a>
+                                    <a href="WBlazer.html">Blazers</a>
+                                    <a href="Wtie.html">Tie</a><br>
+                                    <h5>BottomWear</h5>
+                                    <a href="Wtrousers.html">Trousers</a>
+                                    <a href="Wchinos.html">Chinos</a>
+                                    <a href="Wskirts.html">Skirts</a>
+                                </div>
+                                <div class="Formals-Category">
+                                    <h4>Men's Formals</h4>
+                                    <h5>TopWear</h5>
+                                    <a href="Mshirts.html">Shirts</a>
+                                    <a href="Mblazers.html">Blazers</a>
+                                    <a href="Mtie.html">Tie</a><br>
+                                    <h5>BottomWear</h5>
+                                    <a href="Mtrousers.html">Trousers</a>
+                                    <a href="Mchinos.html">Chinos</a>
+                                </div>
+                                <div class="Formals-Category">
+                                    <img src="WFormals.jpg" class="Dropdown-image" width="290px" height="330px">
+                                </div>
+                                <div class="Formals-Category">
+                                    <img src="MFormals.jpg" class="Dropdown-image" width="200px" height="330px">
+                                </div>
+                            </div></div></li>
+                    <li> <a href="ContactUs.html">Contact Us</a></li>
+                    <li> <a class="active" href="About.html">About</a></li>
+                </ul>
+            </div>
+            <center><img class="initial" src="About.jpg"></center>
+            <div class="content">
+                <div class="border">
+                    <h2>ABOUT US</h2>
+                    <p>JSM formal is a local fast formal e-commerce platform. The company mainly focuses on Men and Women formals. It covers all types of formals at a reasonable rate all around India. The brand was founded in June 2019, and since then it has upheld the philosophy that "everyone can enjoy the beauty of formals". Its business covers more than 100 and regions around India.</p>
+                </div>
+                <div class="border">
+                    <h2>OUR MISSION</h2>
+                    <p>JSM prides itself on offering on-trend styles catering to both young women and teens, that won’t break the bank. JSM adheres to the concept that "everyone can enjoy the beauty of formals". JSM is the ultimate one-stop-shop for the modern yet economical fashionista formals. It aims to promptly offer stylish quality products at appealing prices to every user in India.</p>
+                </div>
+                <div class="border">
+                    <h2>Where you can find us?</h2>
+                    <p>JSM now ships to over 20 states and regions in India. JSM ships from one of its many locally positioned warehouses and dealers. JSM continues to thrive due in part to the company's values in controlling the excellence of in-house production. JSM aims to provide the highest value trendy pieces while also being dediated to quality, value and service.</p>
+                    <br>
+                    <center><img class="India" src="India.jpg" width="50%" height="60%"></center> <br>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>

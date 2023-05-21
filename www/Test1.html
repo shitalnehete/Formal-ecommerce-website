@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <style>
+            body{
+                margin: 0;
+                font-family: Arial;
+                background-color: azure;
+                color: dimgray;
+            }
+            .heading ul{
+                list-style-type: none;
+                margin:0;
+                padding:0;
+                overflow: hidden;
+                background-color: #333;
+                position: fixed;
+                top:0;
+                width:100%
+            }
+            .heading li{
+                float:right;
+            }
+            .heading li a{
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            .heading li a:hover:not(.active){
+                background-color: #111;
+            }
+            .heading .active{
+                background-color: #235597;
+            }
+            div.floating-box {
+                float: left;
+                width: 180px;
+                height: 200px;
+                margin: 50px;
+            }
+            div.alldiv{
+                margin-top: 100px;
+                margin-left: 150px;
+                margin-right: 150px;
+            }
+            img{
+                width: 60px;
+                height: 60px;
+                margin-right: 20px;
+            }
+            img:hover{
+                transform: scale(2.5);
+            }
+            div.Category{
+                border: 3px solid dimgray;
+                border-radius: 25px;
+                text-decoration: none;
+                margin-bottom: 30px;
+            }
+            .Category h3{
+                padding-left: 30px;
+            }
+            .Category a{
+                text-decoration: none;
+                color: dimgray;
+            }
+            .Category .Ctable td{
+                width: 300px;
+            }
+            .Category .Ctable tr{
+                margin-bottom: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="heading">
+            <ul>
+                <li style="float:left"> <a href="Login.html">LOGIN</a></li>
+                <li> <a href="Homepage.html">Home</a></li>
+                <li> <a class="active" href="Category.html">Category</a></li>
+                <li> <a href="ContactUs.html">Contact Us</a></li>
+                <li> <a href="About.html">About</a></li>
+            </ul>
+        </div>
+        
+        <div class="alldiv">
+            <h1>WOMEN'S FASHION</h1>
+            <div class="Category">
+               <table class="Ctable" cellspacing="50">
+                   <tr>
+                       <th style="text-align: left">TopWear</th>
+                       <th style="text-align: left">BottomWear</th>
+                   </tr>
+                   <tr>
+                       <td><a href="Wshirts.html"><img src="WomenShirt.jpg">Shirts</a></td>
+                       <td><a href="Wtrousers.html"><img src="Womentrouser.jpg">Trousers</a></td>
+                   </tr>
+                   <tr>
+                       <td><a href="WBlazer.html"><img src="Womenblazer.jpg">Blazers</a></td>
+                       <td><a href="Wchinos.html"><img src="Womenchinos.jpg">Chinos</a></td>
+                   </tr>
+                   <tr>
+                       <td><a href="Wtie.html"><img src="Womentie.jpg">Tie</a></td>
+                       <td><a href="Wskirts.html"><img src="Womenskirt.jpg">Skirts</a></td>
+                   </tr>
+               </table>
+            </div>
+        </div>
+        <div class="alldiv">
+            <h1>MEN'S FASHION</h1>
+            <div class="Category">
+               <table class="Ctable" cellspacing="50">
+                   <tr>
+                       <th style="text-align: left">TopWear</th>
+                       <th style="text-align: left">BottomWear</th>
+                   </tr>
+                   <tr>
+                       <td><a href="Mshirts.html"><img src="Menshirt.jpg">Shirts</a></td>
+                       <td><a href="Mtrousers.html"><img src="Mentrouser.jpg">Trousers</a></td>
+                   </tr>
+                   <tr>
+                       <td><a href="MBlazer.html"><img src="Menblazer.jpg">Blazers</a></td>
+                       <td><a href="Mchinos.html"><img src="Menchinos.jpg">Chinos</a></td>
+                   </tr>
+                   <tr>
+                       <td><a href="Mtie.html"><img src="Mentie.jpg">Tie</a></td>
+                       <td></td>
+                   </tr>
+                   <tr>
+                       <td><a href="Mcummerbund.html"><img src="Mencummerbund.jpg">Skirts</a></td>
+                       <td></td>
+                   </tr>
+               </table>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,353 @@
+<html>
+    <head>
+        <title>CONTACT US</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            
+            div.entire-page{
+                margin-top: 200px;
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+            div.div-findus{
+                margin-right: 70%;
+            }
+            body{
+                margin:0;
+                font-family: Arial;
+                background-image: url("Background.jpg");
+                background-size: cover;
+                color: dimgray;
+            }
+            .header ul{
+                list-style-type: none;
+                margin:0;
+                padding:0;
+                background-color: #333;
+                position: fixed;
+                width:100%;
+                top: 0;
+                margin-top:100px;
+            }
+            .header li{
+                float:right;
+            }
+            .header li a{
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            .header li a:hover{
+                background-color: #111;
+            }
+            .header .active{
+                background-color: #235597;
+            }
+            .header .active:hover{
+                background-color: #4755D5;
+            }
+            .header .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+            .header .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: white;
+                right: 0;
+                width: 1100%;
+                padding-bottom: 30px;
+            }
+            .header .dropdown-content a {
+                color: dimgray;
+                text-decoration: none;
+                height: 10px;
+                display: block;
+                text-align: left;
+                font-size: 14px;
+                margin-left:-5px;
+                padding-left: 8px;
+                padding-bottom: 2px;
+            }
+            .header .dropdown-content a:hover{
+                color: blue;
+                background-color: white;
+                text-decoration: underline;
+            }
+            .header .dropdown-content .Formals-Category{
+                float: left;
+                padding-left: 100px;
+                padding: 10px 30px 50px 30px;
+            }
+            .Formals-Category h5{
+                font-size: 16px;
+                margin-bottom: -7px;
+            }
+            .Formals-Category h4{
+                font-size: 20px;
+                margin-bottom: -5px;
+            }
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            
+            img.logo{   position:fixed;
+			padding:0;
+			margin-top:0;
+            top:0;
+		    }
+	  
+		h3.slogan{font-family:garamond;
+		   font-size:150%;
+            margin-left: 30%;
+		   color:navy;
+            top:0;
+		   position: fixed;
+		   }
+            .collapsible {
+                background-color: azure;
+                color: dimgray;
+                cursor: pointer;
+                width: 5%;
+                height: 20px;
+                border: none;
+                outline: none;
+                font-size: 15px;
+            }
+            .content {
+                padding: 0 18px;
+                display: none;
+                overflow: hidden;
+                background-color: azure;
+            }
+            .entire-page h2{
+                border-bottom: 1px solid dimgray;
+                padding-bottom: 15px;
+            }
+            .entire-page p{
+                font-size: 15px;
+            }
+            .entire-page{
+                font-size: 20px;
+            }
+            .div-findus ul{
+                list-style-type: none;
+            }
+            .div-findus li{
+                float: left;
+                margin-right: 5%;
+            }
+            .content button{
+                width: 150px;
+                height: 40px;
+                font-size: 16px;
+                background-color: dimgray;
+                color: white;
+                border: none;
+            }
+            .content button:hover{
+                background-color: black;
+            }
+            * {box-sizing: border-box;}
+
+            /* Button used to open the contact form - fixed at the bottom of the page */
+            .open-button {
+              background-color: dimgray;
+              color: whitesmoke;
+                text-align: center;
+              padding: 16px 20px;
+              border: none;
+              cursor: pointer;
+            }
+
+            /* The popup form - hidden by default */
+            .form-popup {
+                display: none;
+                border: 3px solid #f1f1f1;
+                z-index: 9;
+                max-width: 300px;
+                height: 73%;
+            }
+
+            /* Add styles to the form container */
+            .form-container {
+              max-width: 300px;
+              padding: 10px;
+              background-color: white;
+            }
+
+            /* Full-width input fields */
+            .form-container input[type=text] {
+              width: 100%;
+              padding: 15px;
+              margin: 5px 0 22px 0;
+              border: none;
+              background: #f1f1f1;
+            }
+
+            /* When the inputs get focus, do something */
+            .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+              background-color: #ddd;
+              outline: none;
+            }
+
+            /* Set a style for the submit button */
+            .form-container .btn {
+              background-color: dimgray;
+              color: white;
+              padding: 16px 20px;
+              border: none;
+                border-radius: 8px;
+              cursor: pointer;
+              width: 50%;
+              margin-bottom:10px;
+            }
+            /* Add some hover effects to buttons */
+            .form-container .btn:hover {
+              background-color: white;
+                color: dimgray;
+                border: 1px solid dimgray;
+            }
+            @media screen and (max-width:500px)  {
+		      .relative, div-findus, .header{
+			     width: 100%;
+		      }
+                .header .dropdown-content{
+                    width: 300%;
+                }
+                .Formals-Category img.Dropdown-image{
+                visibility: hidden;
+                }
+                .form-container{
+                    height: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="relative">
+            <a href="index.html"><img class="logo" src="logo1.png" height="105" alt="logo"></a>
+            <h3 class="slogan">JSM FORMALS THE WAY OF CLOTHING!</h3>
+            <div class="header">
+                <ul>
+                    <li style="float:left"> <a href="Login.html">LOGIN</a></li>
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <div class="dropdown">
+                            <a href="Category.html">Category</a>
+                            <div class="dropdown-content">
+                                <div class="Formals-Category">
+                                    <h4>Women's Formals</h4>
+                                    <h5>TopWear</h5>
+                                    <a href="Wshirts.html">Shirts</a>
+                                    <a href="WBlazer.html">Blazers</a>
+                                    <a href="Wtie.html">Tie</a><br>
+                                    <h5>BottomWear</h5>
+                                    <a href="Wtrousers.html">Trousers</a>
+                                    <a href="Wchinos.html">Chinos</a>
+                                    <a href="Wskirts.html">Skirts</a>
+                                </div>
+                                <div class="Formals-Category">
+                                    <h4>Men's Formals</h4>
+                                    <h5>TopWear</h5>
+                                    <a href="Mshirts.html">Shirts</a>
+                                    <a href="Mblazers.html">Blazers</a>
+                                    <a href="Mtie.html">Tie</a><br>
+                                    <h5>BottomWear</h5>
+                                    <a href="Mtrousers.html">Trousers</a>
+                                    <a href="Mchinos.html">Chinos</a>
+                                </div>
+                                <div class="Formals-Category">
+                                    <img src="WFormals.jpg" class="Dropdown-image" width="290px" height="330px">
+                                </div>
+                                <div class="Formals-Category">
+                                    <img src="MFormals.jpg" class="Dropdown-image" width="200px" height="330px">
+                                </div>
+                            </div></div></li>
+                    <li> <a class="active" href="ContactUs.html">Contact Us</a></li>
+                    <li> <a href="About.html">About</a></li>
+                </ul>
+            </div>
+            <div class="entire-page">
+                <h2>Contact Us</h2>
+                <p>We believe in delivering excellent customer service and we are dedicated to satisfying our customers. If you have any questions, comments or suggestions, feel free to click 'Customer Care' ! Get in touch! We would love to hear from you.</p> <br> <br> 
+                <button class="collapsible">+</button> LIVE CHAT
+                <div class="content">
+                  <p>24*7 hours always at your service.</p>
+                  <p>Have a live chat on your Whatsapp and Instagram handle.</p>
+                </div> <br> <br>
+                <button class="collapsible">+</button> CALL RESERVATION
+                <div class="content">
+                  <p>We will call back to you on your requested time, please pay attention to answer.</p>
+                  <p>Reserve a call on: 6539940331</p>
+                </div> <br> <br>
+                <button class="collapsible">+</button> MAIL US
+                <div class="content">
+                  <p>We appreciate each and every review. It's very valuable.</p>
+                  <p>Email id: helpyou@jsmformals.com</p>
+                </div> <br> <br>
+                <button class="collapsible">+</button> FEEDBACK
+                <div class="content">
+                  <p>Our Feedback can change our experience.</p>
+                  <button class="open-button" onclick="openForm()">FEEDBACK</button>
+                    <div class="form-popup" id="myForm">
+                      <form class="form-container">
+                        <h3>FEEDBACK</h3>
+                        <input type='text' placeholder="Name" required>
+                        <input type="text" placeholder="Email id" required>
+                        <input type="text" placeholder="State" required>
+                        <input type="text" placeholder="Feedback" required>
+                        <center><button type="button" class="btn" onclick="alert('Your feedback is submitted!')">SUBMIT</button>
+                            <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button></center>
+                      </form>
+                    </div>
+                </div> <br> <br>
+                <button class="collapsible">+</button> CONTACT US
+                <div class="content"> 
+                  <p>RAMRAO ADIK INSTITUTE OF TECHNOLOGY, Navi Mumbai 400706</p>
+                  <button onclick="alertit()">CONTACT US</button>
+                </div> <br> <br>
+                <div class="div-findus">
+                <h4>FIND US ON</h4>
+                <ul>
+                    <li><a href="#"><img src="facebook.jpg" class="findus" width="50px" height="40px"></a></li>
+                    <li><a href="#"><img src="instagram.jpg" class="findus" width="50px" height="40px"></a></li>
+                    <li><a href="#"><img src="snapchat.jpg" class="findus" width="45px" height="40px"></a></li>
+                </ul>
+                </div>
+            </div>
+            
+            </div>
+
+            <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+
+                for (i = 0; i < coll.length; i++) {
+                  coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                      content.style.display = "none";
+                    } else {
+                      content.style.display = "block";
+                    }
+                  });
+                }
+
+                function alertit(){
+                    alert("JEET: 9561213192 SHITAL: 9930847332 MANSI: 9136117667");
+                }
+                // When the user clicks on div, open the popup
+                function openForm() {
+                  document.getElementById("myForm").style.display = "block";
+                }
+
+                function closeForm() {
+                  document.getElementById("myForm").style.display = "none";
+                }
+
+            </script>
+    </body>
+</html>
